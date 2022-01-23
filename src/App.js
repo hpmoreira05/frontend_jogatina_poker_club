@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import MatchCreate from './pages/matchCreate';
-import Home from './pages/home';
-import Matches from './pages/matches';
-import Ranking from './pages/ranking';
-import Users from './pages/users';
+import MatchCreate from './pages/MatchCreate';
+import Home from './pages/Home';
+import Matches from './pages/Matches';
+import Ranking from './pages/Ranking';
+import Users from './pages/Users';
 import './styles/index.css'
 
 function App() {
