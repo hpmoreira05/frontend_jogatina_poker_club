@@ -1,0 +1,172 @@
+.createMatch{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ddd;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.createMatchContainer{
+  background-color: #171717;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ddd;
+  width: 600px;
+  padding: 32px;
+  border-radius: 8px;
+  max-height: 75vh;
+  overflow-x: hidden;
+}
+
+.createMatchContainer h1{
+  border-bottom: 1px solid rgb(77, 73, 73);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.createMatch .send{
+  font-size: 46px;
+  color: #ddd;
+}
+
+.createMatch .send:hover{
+  color: goldenrod;
+  transition: 0.5s;
+}
+
+.createMatch button{
+  background-color: transparent;
+  border: none;
+  color: rgb(77, 73, 73);
+  font-size: 24px;
+}
+
+.createMatch .buttonAddPlayer:hover{
+  color: goldenrod;
+  transition: 0.5s;
+}
+
+.createMatch .buttonRemovePlayer:hover{
+  color: red;
+  transition: 0.5s;
+}
+
+.date{
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.date label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 16px;
+}
+
+.date label select{
+  margin-left: 16px;
+}
+
+.date span{
+  padding-right: 16px;
+}
+
+.date input{
+  width: 130px;
+}
+
+.buttonAddPlayer{
+  margin-left: 16px;
+}
+
+.inputMatch{
+  margin: 8px 0px;
+  /* padding-bottom: 8px; */
+  /* border-bottom: 1px solid red; */
+}
+
+.matchUser{
+  display: flex;
+}
+
+.matchUser label{
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.matchUser label div{
+  margin-bottom: 5px;
+}
+
+@media (max-width: 576px){
+  .createMatchContainer{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ddd;
+    width: 80%;
+    /* padding: 32px; */
+    border-radius: 8px;
+    max-height: 70vh;
+    overflow-x: hidden;
+    /* border: 1px solid rgb(77, 73, 73); */
+  }
+
+  .createMatch{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ddd;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .createMatch button{
+    color: goldenrod;
+    font-size: 40px;
+  }
+
+  .date{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .date label{
+    margin-bottom: 16px;
+  }
+
+  .date input{
+    margin-bottom: 16px;
+  }
+
+  .date span{
+    margin-bottom: 6px;
+  }
+
+  .buttonsAddPlayer{
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+  }
+
+  .matchUser{
+    flex-direction: column;
+    border-bottom: 1px solid rgb(77, 73, 73);
+  }
+
+  .matchUser input, select{
+    margin-bottom: 16px;
+  }
+}

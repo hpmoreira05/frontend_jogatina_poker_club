@@ -1,0 +1,162 @@
+.matches{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ddd;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spinner{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.matchesContainer{
+  background-color: #171717;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ddd;
+  width: 600px;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+
+.results{
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.results div{
+  border-bottom: 1px solid rgb(77, 73, 73);
+  flex-grow: 1;
+  width: 200px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.positiveResult{
+  color: green;
+}
+
+.negativeResult{
+  color: rgb(146, 5, 5);
+}
+
+.matchesHeader{
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.matchesHeader div{
+  border-bottom: 1px solid goldenrod;
+  flex-grow: 1;
+  width: 200px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: goldenrod;
+  text-transform: uppercase;
+}
+
+.matches button{
+  background-color: transparent;
+  border: none;
+  color: rgb(77, 73, 73);
+  font-size: 24px;
+}
+
+.matches button:hover{
+  color: goldenrod;
+  transition: 0.5s;
+}
+
+.matchesForm{
+  display: flex;
+  justify-content: space-between;
+}
+
+.matchesForm select{
+  width: 550px;
+}
+
+@media (max-width: 576px){
+  .matches{
+    padding-top: 50px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ddd;
+    width: 95%;
+    /* padding: 32px; */
+    border-radius: 8px;
+    max-height: 76vh;
+    overflow-x: hidden;
+    /* border: 1px solid rgb(77, 73, 73); */
+  }
+  
+  .matchesContainer{
+    /* background-color: transparent;
+    backdrop-filter: blur(10px); */
+    padding-top: 50px;
+    padding-left: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ddd;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+
+  .matchesForm{
+    width: 80%;
+  }
+
+  .matchesForm select{
+    margin: 0;
+  }
+
+  .matchesForm button{
+    margin-left: 16px;
+    font-size: 30px;
+  }
+
+  .allResults{
+    width: 100%;
+  }
+
+  .matchesHeader{
+    width: 100%;
+  }
+
+  .results{
+    width: 100%;
+  }
+
+  .results div{
+    margin-top: 16px;
+  }
+
+  .results div{
+    margin-top: 16px;
+    padding-bottom: 16px;
+  }
+}
